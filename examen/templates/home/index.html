@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolios - Equipo Dev</title>
+    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Portafolios del Equipo</h1>
+            <p>Selecciona un desarrollador para ver su hoja de vida</p>
+        </header>
+
+        <div class="cards">
+            <a href="{% url 'cv' %}" class="card card--active">
+                <div class="card__icon">👨‍💻</div>
+                <div class="card__title">Dev 1</div>
+                <div class="card__subtitle">Johnatan Matheu</div>
+                <div class="card__badge">Ver CV</div>
+            </a>
+
+            <div class="card card--disabled">
+                <div class="card__icon">👨‍💻</div>
+                <div class="card__title">Dev 2</div>
+                <div class="card__subtitle">Próximamente</div>
+                <div class="card__badge card__badge--soon">En desarrollo</div>
+            </div>
+
+            <div class="card card--disabled">
+                <div class="card__icon">👨‍💻</div>
+                <div class="card__title">Dev 3</div>
+                <div class="card__subtitle">Próximamente</div>
+                <div class="card__badge card__badge--soon">En desarrollo</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
