@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Dev 2</title>
+    <link rel="stylesheet" href="{% static 'dev2/css/styles.css' %}">
+</head>
+<body>
+    <a href="{% url 'index' %}" class="back-btn">← Volver al inicio</a>
+
+    <div class="cv-container">
+
+        <!-- ENCABEZADO -->
+        <header class="cv-header">
+            <div class="cv-header__avatar">D2</div>
+            <div class="cv-header__info">
+                <h1>Developer 2</h1>
+                <p class="cv-header__tagline">Profesional en desarrollo web moderno</p>
+                <div class="cv-header__contact">
+                    <span>✉ dev2@example.com</span>
+                    <span>📞 +57 300 000 0000</span>
+                    <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- PERFIL PROFESIONAL -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Perfil Profesional</h2>
+            <p>
+                Desarrollador web especializado en tecnologías frontend con experiencia en React, Vue.js y frameworks modernos. 
+                Apasionado por crear interfaces intuitivas, responsivas y de alto rendimiento. He participado en proyectos 
+                de e-commerce, SaaS y aplicaciones empresariales, siempre enfocándome en la experiencia del usuario y las 
+                mejores prácticas de desarrollo. Tengo sólidas habilidades en resolución de problemas, optimización de rendimiento 
+                y trabajo colaborativo en equipos multidisciplinarios.
+            </p>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Experiencia Laboral</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Frontend Developer</h3>
+                        <span class="cv-card__company">Tech Solutions Inc.</span>
+                    </div>
+                    <span class="cv-card__period">2023 - Actualidad</span>
+                </div>
+                <p>Desarrollo de interfaces web usando React y TypeScript. Implementación de componentes reutilizables, 
+                gestión de estado con Redux, integración de APIs REST y GraphQL. Mejora continua del rendimiento y UX 
+                de la plataforma principal.</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Junior Developer</h3>
+                        <span class="cv-card__company">Creative Web Studio</span>
+                    </div>
+                    <span class="cv-card__period">2021 - 2023</span>
+                </div>
+                <p>Participé en el desarrollo de sitios web responsivos con HTML5, CSS3 y JavaScript. Implementación de 
+                animaciones y efectos visuales. Mantenimiento y mejora de código legado. Colaboración directa con diseñadores 
+                y desarrolladores backend.</p>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Proyectos Destacados</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Dashboard Analítico en Tiempo Real</h3>
+                </div>
+                <p>Plataforma de análisis interactiva que permite visualizar datos en tiempo real con gráficos dinámicos, 
+                filtros avanzados y exportación a múltiples formatos.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> React, TypeScript, D3.js, Tailwind CSS, Firebase</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>E-commerce Moderno</h3>
+                </div>
+                <p>Tienda online completa con carrito de compras, sistema de pago integrado, gestión de inventario 
+                y panel de administración intuitivo.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Next.js, Stripe API, MongoDB, Tailwind CSS</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Aplicación de Tareas Colaborativa</h3>
+                </div>
+                <p>Sistema de gestión de proyectos con soporte para múltiples usuarios, comentarios en tiempo real, 
+                notificaciones personalizadas y sincronización automática.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Vue.js, WebSockets, PostgreSQL, Docker</p>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Habilidades Técnicas</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Frontend</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">HTML5/CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Herramientas</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Estilos</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">SCSS</span>
+                        <span class="skill-tag">Material UI</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCACIÓN -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Educación</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Ingeniería de Software</h3>
+                        <span class="cv-card__company">Universidad Tecnológica</span>
+                    </div>
+                    <span class="cv-card__period">2018 - 2022</span>
+                </div>
+                <p>Formación integral en desarrollo de software, arquitectura de sistemas, bases de datos y metodologías ágiles.</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Certificación en React Avanzado</h3>
+                        <span class="cv-card__company">Udemy / Platzi</span>
+                    </div>
+                    <span class="cv-card__period">2022</span>
+                </div>
+                <p>Dominio avanzado de React incluyendo hooks, context API, performance optimization y patrones de diseño.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="{% static 'dev2/js/script.js' %}"></script>
+</body>
+</html>
