@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Johnatan Matheu Ruales Galvis</title>
+    <link rel="stylesheet" href="{% static 'dev1/css/styles.css' %}">
+</head>
+<body>
+    <a href="{% url 'index' %}" class="back-btn">← Volver al inicio</a>
+
+    <div class="cv-container">
+
+        <!-- ENCABEZADO -->
+        <header class="cv-header">
+            <div class="cv-header__avatar">JM</div>
+            <div class="cv-header__info">
+                <h1>Johnatan Matheu Ruales Galvis</h1>
+                <p class="cv-header__tagline">En búsqueda de nuevos retos</p>
+                <div class="cv-header__contact">
+                    <span>✉ matheuruales2b2t@gmail.com</span>
+                    <span>📞 +57 314 624 9791</span>
+                    <a href="https://linkedin.com/in/matheu-ruales-32221a331" target="_blank">🔗 LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- PERFIL PROFESIONAL -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Perfil Profesional</h2>
+            <p>
+                Estudiante de Ingeniería de Software con experiencia en desarrollo de aplicaciones web, automatización de procesos,
+                inteligencia artificial y tecnologías inmersivas. Me caracterizo por aprender rápido, adaptarme con facilidad a nuevas
+                herramientas y aportar soluciones prácticas a problemas reales. He participado en proyectos académicos, hackatones y
+                desarrollos tecnológicos enfocados en software, agentes de IA, gestión de datos, simuladores XR y automatización de
+                flujos de trabajo. Tengo habilidades para el trabajo en equipo, la comunicación asertiva, la resolución de problemas
+                y el desarrollo de soluciones con enfoque técnico, funcional y escalable.
+            </p>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Experiencia Laboral</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>AI Engineer / Full Stack Developer</h3>
+                        <span class="cv-card__company">Depxus IA y 30X</span>
+                    </div>
+                    <span class="cv-card__period">2025 - Actualidad</span>
+                </div>
+                <p>Me desempeño como AI Engineer y Full Stack Developer en Depxus IA y 30X, participando en el diseño, desarrollo e
+                implementación de soluciones basadas en inteligencia artificial, automatización y desarrollo de software tanto en
+                frontend como en backend. Mi trabajo se enfoca en la construcción de agentes de IA, integración de herramientas,
+                automatización de flujos y desarrollo de plataformas tecnológicas escalables orientadas a resolver necesidades reales de negocio.</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Monitor Académico y Desarrollador</h3>
+                        <span class="cv-card__company">Universidad Cooperativa de Colombia</span>
+                    </div>
+                    <span class="cv-card__period">Feb 2025 – Ago 2025</span>
+                </div>
+                <p>Me desempeñé como monitor académico apoyando actividades institucionales y tecnológicas relacionadas con la
+                organización de eventos, la gestión operativa y el desarrollo de soluciones digitales. Participé en el apoyo logístico
+                y técnico de eventos académicos, así como en el desarrollo de una plataforma de asistencias que permitió optimizar
+                el registro y control de participación de los asistentes.</p>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Proyectos</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>AnyPost – Automatización de publicaciones en redes sociales</h3>
+                </div>
+                <p>Plataforma que permite a emprendedores y empresas gestionar y automatizar publicaciones en varias redes sociales,
+                programar contenido y organizar campañas usando IA para apoyar la creación de textos e imágenes.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> React, TypeScript, Java, Spring Boot, PostgreSQL, n8n</p>
+                <a href="https://any-post-frontend-rnnq4zzhh-matheus-projects-d0a163a3.vercel.app/login" target="_blank" class="cv-card__link">Ver proyecto →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>BilbaoVerse – Ecosistema empresarial</h3>
+                </div>
+                <p>Plataforma digital orientada a conectar negocios, comunidad y oportunidades de crecimiento en Latinoamérica,
+                funcionando como un ecosistema para impulsar relaciones estratégicas y colaboración empresarial.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Next.js, TypeScript, Tailwind CSS, Python, FastAPI, PostgreSQL, Azure</p>
+                <a href="https://bilbaoverse.net/" target="_blank" class="cv-card__link">Ver proyecto →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>CRM con Agente de IA – Plataforma comercial</h3>
+                </div>
+                <p>Plataforma comercial que integra un CRM con IA para gestionar leads, automatizar seguimiento y optimizar
+                procesos de venta en entornos de operación real.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Next.js, TypeScript, Tailwind CSS, Python, FastAPI, LangGraph, OpenAI API, WhatsApp API, TikTok API</p>
+                <a href="https://30x.vercel.app/login" target="_blank" class="cv-card__link">Ver proyecto →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Homa – Plataforma inmobiliaria <span class="cv-card__badge-inline">En desarrollo</span></h3>
+                </div>
+                <p>Plataforma web inmobiliaria diseñada para la publicación, búsqueda y gestión de propiedades en venta y arriendo.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Next.js, TypeScript, Python, FastAPI, PostgreSQL</p>
+                <a href="https://homa-frontend.vercel.app" target="_blank" class="cv-card__link">Ver proyecto →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>E-commerce de Ferretería <span class="cv-card__badge-inline">En desarrollo</span></h3>
+                </div>
+                <p>Tienda online diseñada para la visualización, organización y exploración de productos de ferretería dentro
+                de una experiencia moderna y comercial.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Next.js, TypeScript, Tailwind CSS, Python, FastAPI, PostgreSQL, Wompi</p>
+                <a href="https://frontend-ferreteria-two.vercel.app/login" target="_blank" class="cv-card__link">Ver proyecto →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>PulmoMed – Simulador inmersivo oncología pulmonar</h3>
+                </div>
+                <p>Proyecto desarrollado en Unity para gafas Meta Quest 2, 3 y Pro, orientado a la enseñanza de oncología pulmonar.
+                Permite explorar entornos 3D del sistema respiratorio, visualizar la evolución de tumores y comprender procesos
+                clínicos relacionados con el cáncer de pulmón.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Unity, C#, Meta Quest</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Full House – Ganador de Hackatón 🏆</h3>
+                </div>
+                <p>Sistema web que utiliza IA para analizar y priorizar leads inmobiliarios, automatiza la publicación de propiedades
+                en redes sociales mediante n8n e integra un chat funcional con WhatsApp para centralizar la atención.</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Sistema de Registro de Asistencia con QR</h3>
+                    <span class="cv-card__company">Universidad Cooperativa de Colombia</span>
+                </div>
+                <p>Software de registro de asistencia que reemplaza planillas físicas por códigos QR únicos para cada participante,
+                automatizando el ingreso y salida a eventos académicos con registro en tiempo real.</p>
+            </div>
+        </section>
+
+        <!-- HABILIDADES TÉCNICAS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Habilidades Técnicas</h2>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Lenguajes</h4>
+                    <div class="skill-tags">
+                        <span>Python</span><span>Java</span><span>JavaScript</span>
+                        <span>TypeScript</span><span>C#</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Frameworks</h4>
+                    <div class="skill-tags">
+                        <span>React</span><span>Next.js</span><span>Vite</span>
+                        <span>FastAPI</span><span>Django</span><span>Spring Boot</span>
+                        <span>Unity</span><span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Bases de datos</h4>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span><span>MongoDB</span>
+                        <span>Supabase</span><span>Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>IA & Automatización</h4>
+                    <div class="skill-tags">
+                        <span>LangGraph</span><span>OpenAI API</span><span>n8n</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Cloud & DevOps</h4>
+                    <div class="skill-tags">
+                        <span>Azure</span><span>Vercel</span><span>Railway</span>
+                        <span>Docker</span><span>Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Control de versiones</h4>
+                    <div class="skill-tags">
+                        <span>Git</span><span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES BLANDAS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Habilidades Blandas</h2>
+            <ul class="cv-list">
+                <li>Trabajo en equipo colaborativo en proyectos</li>
+                <li>Adaptación rápida a nuevas tecnologías y entornos de trabajo</li>
+                <li>Resolución de problemas técnicos de forma autónoma</li>
+                <li>Responsabilidad y compromiso con los objetivos del proyecto</li>
+                <li>Proactividad para proponer soluciones e implementar mejoras</li>
+            </ul>
+        </section>
+
+        <!-- FORMACIÓN ACADÉMICA -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Formación Académica</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Ingeniería de Software</h3>
+                        <span class="cv-card__company">Universidad Cooperativa de Colombia</span>
+                    </div>
+                    <span class="cv-card__period">Cursando – 4to semestre</span>
+                </div>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Bachillerato Académico</h3>
+                        <span class="cv-card__company">Institución Educativa Municipio de Mallama</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Técnico Laboral en Sistemas Informáticos</h3>
+                        <span class="cv-card__company">Idetec de Nariño</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Diplomado en Herramientas Web 2.0 y Redes Informáticas</h3>
+                        <span class="cv-card__company">Idetec de Nariño</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IDIOMAS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Idiomas</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <div class="skill-tags">
+                        <span>Español — Lengua materna</span>
+                        <span>Inglés — B2 (Medio)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFERENCIAS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Referencias</h2>
+
+            <div class="refs-grid">
+                <div class="cv-card">
+                    <h4>Luis Carlos Revelo Tovar</h4>
+                    <p>Director de Ingeniería de Software UCC</p>
+                    <p>📞 315 590 4324</p>
+                    <p>✉ luis.revelot@campusucc.edu.co</p>
+                </div>
+                <div class="cv-card">
+                    <h4>Daniel Fernando Arteaga Fajardo</h4>
+                    <p>Encargado de proyecto de realidad mixta</p>
+                    <p>📞 301 688 9827</p>
+                    <p>✉ daniel.arteagafajar@campusucc.edu.co</p>
+                </div>
+                <div class="cv-card">
+                    <h4>Oscar Andrés Osorio</h4>
+                    <p>Docente Ingeniería de Software</p>
+                    <p>📞 314 717 0398</p>
+                </div>
+                <div class="cv-card">
+                    <h4>Juan Carlos Reyes Guerrero</h4>
+                    <p>Referencia personal</p>
+                    <p>📞 301 526 7740</p>
+                </div>
+                <div class="cv-card">
+                    <h4>Alejandro España Meza</h4>
+                    <p>Referencia personal</p>
+                    <p>📞 315 461 3867</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="cv-footer">
+            <p>© 2026 Johnatan Matheu Ruales Galvis. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
