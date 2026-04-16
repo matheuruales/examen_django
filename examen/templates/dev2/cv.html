@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Dev 2</title>
+    <link rel="stylesheet" href="{% static 'dev2/css/styles.css' %}">
+</head>
+<body>
+    <a href="{% url 'index' %}" class="back-btn">← Volver al inicio</a>
+
+    <div class="cv-container">
+
+        <!-- ENCABEZADO -->
+        <header class="cv-header">
+            <div class="cv-header__avatar">AE</div>
+            <div class="cv-header__info">
+                <h1>Alejandro España</h1>
+                <p class="cv-header__tagline">Desarrollador Full Stack con pasión por la innovación</p>
+                <div class="cv-header__contact">
+                    <span>✉ alejandro.espana@email.com</span>
+                    <span>📞 +57 316 847 5293</span>
+                    <a href="https://linkedin.com/in/alejandro-espana" target="_blank">🔗 LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- PERFIL PROFESIONAL -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Perfil Profesional</h2>
+            <p>
+                Desarrollador Full Stack con 5 años de experiencia en el desarrollo de aplicaciones web escalables y soluciones empresariales. 
+                Especializado en React, Node.js y bases de datos relacionales, con expertise adicional en DevOps y arquitectura de microservicios. 
+                Originario de Medellín, Colombia, destaco por mi capacidad de resolver problemas complejos, optimizar rendimiento y liderar equipos 
+                técnicos. Apasionado por la calidad del código, las metodologías ágiles y la mejora continua. He liderado múltiples proyectos desde 
+                la concepción hasta la producción, trabajando con startups y empresas Fortune 500.
+            </p>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Experiencia Laboral</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Senior Full Stack Developer</h3>
+                        <span class="cv-card__company">Innovatech Solutions</span>
+                    </div>
+                    <span class="cv-card__period">2021 - Actualidad</span>
+                </div>
+                <p>Lideré el desarrollo de una plataforma SaaS de gestión empresarial con React, Node.js y PostgreSQL. 
+                Implementé arquitectura de microservicios, optimicé consultas de base datos mejorando rendimiento en 60%, 
+                y supervisé a un equipo de 4 desarrolladores junior. Establecí estándares de código y mejores prácticas SOLID.</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Developer Full Stack</h3>
+                        <span class="cv-card__company">Conexión Digital S.A.</span>
+                    </div>
+                    <span class="cv-card__period">2019 - 2021</span>
+                </div>
+                <p>Desarrollé aplicaciones web con Vue.js y Express.js para clientes del sector financiero y retail. 
+                Implementé pipelines CI/CD con Jenkins, realizé deployment en AWS EC2, y trabajé en integraciones con APIs 
+                de terceros. Capacité a 3 desarrolladores junior en buenas prácticas de desarrollo.</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Frontend Developer</h3>
+                        <span class="cv-card__company">WebStudio Creativo</span>
+                    </div>
+                    <span class="cv-card__period">2018 - 2019</span>
+                </div>
+                <p>Desarrollé interfaces responsivas con HTML5, CSS3 y JavaScript vanilla. Participé en proyectos de 
+                e-commerce, implementé animaciones complejas y optimicé performance. Colaboré con UX/UI designers 
+                para mejorar la experiencia del usuario.</p>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Proyectos Destacados</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>GestioEmpresa - Plataforma SaaS de ERP</h3>
+                </div>
+                <p>Desarrollé una plataforma empresarial completa usando React con TypeScript en frontend y Node.js en backend. 
+                Incluye gestión de facturas, inventario, CRM y reportes analíticos. Implementé autenticación OAuth2, 
+                websockets para notificaciones en tiempo real y exportación de reportes a PDF/Excel. Más de 50 empresas 
+                activas con 10,000+ usuarios mensuales.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> React, TypeScript, Node.js, PostgreSQL, AWS, Docker</p>
+                <a href="https://gestioempresa-demo.herokuapp.com" target="_blank" class="cv-card__link">Ver proyecto →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>MonitorPro - Dashboard de Monitoreo IoT</h3>
+                </div>
+                <p>Plataforma de monitoreo en tiempo real para dispositivos IoT con visualización de datos en mapas interactivos. 
+                Implementé WebSockets para recibir datos en tiempo real, gráficos dinámicos con Chart.js y alertas automáticas. 
+                Procesé más de 1M de eventos por día sin degradación de performance.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Vue.js, Express.js, InfluxDB, Redis, Socket.io</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>MelleApp - Red Social de Negocios</h3>
+                </div>
+                <p>Red social orientada a conectar emprendedores y empresas en Latinoamérica. Implementé feed de noticias, 
+                sistema de mensajería en tiempo real, búsqueda avanzada y modelo de monetización. Arquitectura escalable 
+                con microservicios en Docker y orquestación en Kubernetes.</p>
+                <p class="cv-card__stack"><strong>Stack:</strong> React, Node.js, PostgreSQL, MongoDB, Kubernetes, RabbitMQ</p>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Habilidades Técnicas</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Frontend</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">HTML5/CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Backend</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>DevOps & Herramientas</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Estilos & Frontend</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">SCSS</span>
+                        <span class="skill-tag">Material UI</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCACIÓN -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Educación</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Ingeniería de Sistemas</h3>
+                        <span class="cv-card__company">Universidad Nacional de Colombia - Medellín</span>
+                    </div>
+                    <span class="cv-card__period">2017 - 2022</span>
+                </div>
+                <p>Título: Ingeniero de Sistemas. Especialización en desarrollo de software y arquitectura de sistemas. 
+                Proyecto final: Plataforma IoT para monitoreo ambiental en tiempo real. Promedio: 4.3/5.0</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>AWS Solutions Architect Associate</h3>
+                        <span class="cv-card__company">Amazon Web Services</span>
+                    </div>
+                    <span class="cv-card__period">2023</span>
+                </div>
+                <p>Certificación oficial en diseño e implementación de soluciones escalables en AWS. Dominio en EC2, 
+                RDS, S3, Lambda, API Gateway y servicios de DevOps.</p>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Kubernetes Administrator (CKA)</h3>
+                        <span class="cv-card__company">Linux Foundation</span>
+                    </div>
+                    <span class="cv-card__period">2022</span>
+                </div>
+                <p>Certificación en administración y orquestación de contenedores con Kubernetes. Experiencia en 
+                deploying, scaling y mantenimiento de clusters en producción.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="{% static 'dev2/js/script.js' %}"></script>
+</body>
+</html>
