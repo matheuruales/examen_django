@@ -101,3 +101,105 @@ body {
 .cv-header__contact a:hover {
     text-decoration: underline;
 }
+
+/* SECTIONS */
+.cv-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cv-section__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.cv-section > p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* CARDS INSIDE SECTIONS */
+.cv-card {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.cv-card:last-child {
+    margin-bottom: 0;
+}
+
+.cv-card:hover {
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15);
+}
+
+.cv-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.cv-card__header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.cv-card__company {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 500;
+    margin-top: 0.15rem;
+}
+
+.cv-card__period {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    height: fit-content;
+}
+
+.cv-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+}
+
+.cv-card__stack {
+    font-size: 0.85rem !important;
+    color: #64748b !important;
+    margin-top: 0.5rem;
+}
+
+.cv-card__link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.cv-card__link:hover {
+    color: #818cf8;
+}
