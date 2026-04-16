@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Luis Esteban Castillo Pedroza</title>
+    <link rel="stylesheet" href="{% static 'dev3/css/styles.css' %}">
+</head>
+<body>
+    <a href="{% url 'index' %}" class="back-btn">← Volver al inicio</a>
+
+    <div class="cv-container">
+
+        <!-- HEADER -->
+        <header class="cv-header">
+            <div class="cv-header__avatar">LC</div>
+            <div class="cv-header__info">
+                <h1>Luis Esteban Castillo Pedroza</h1>
+                <p class="cv-header__tagline">FullStack AI Engineer</p>
+                <div class="cv-header__contact">
+                    <span>✉ luisestebancastillopedroza90@gmail.com</span>
+                    <span>📞 +57 313 755 5023</span>
+                    <span>📍 San Juan de Pasto, Nariño, Colombia</span>
+                    <a href="https://lxiscxstillo.github.io" target="_blank">🌐 Portfolio</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Professional Summary</h2>
+            <p>
+                FullStack AI Engineer with hands-on professional experience at 30x and Deepxus designing, building, and shipping
+                end-to-end intelligent systems that combine production-grade web engineering with autonomous AI. I have delivered
+                autonomous LLM agents, full-stack enterprise applications, and real-time AI analytics dashboards — all the way from
+                requirements to cloud deployment. I work across TypeScript, Python, and Java ecosystems with deep practical experience
+                in LangGraph, FastAPI, Spring Boot, Angular, and Next.js, and I build software that solves real problems at scale.
+            </p>
+        </section>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Professional Experience</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>FullStack AI Engineer</h3>
+                        <span class="cv-card__company">30x &amp; Deepxus</span>
+                    </div>
+                    <span class="cv-card__period">March 2026 – Present</span>
+                </div>
+                <p>San Juan de Pasto, Colombia</p>
+                <p>
+                    At 30x and Deepxus I architect and deliver AI-powered full-stack features across TypeScript, Python, and Java,
+                    moving from product requirements to production-ready systems within days rather than weeks. I design multi-service
+                    backend architectures that combine Node.js/Express REST APIs, Python FastAPI AI services, and Next.js frontends,
+                    all containerized with Docker and deployed to cloud infrastructure. I engineer LLM-integrated agentic workflows
+                    using LangGraph and LangChain that automate repetitive business processes, reducing manual operational overhead by
+                    approximately 60% per workflow replaced. I apply clean architecture principles, REST API best practices, and
+                    test-driven development to translate complex product requirements into scalable and maintainable software.
+                </p>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Featured Projects</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>WhatsApp Sales Agent</h3>
+                    <span class="cv-card__period">2026</span>
+                </div>
+                <p>
+                    I architected a fully autonomous conversational real estate sales agent operating over WhatsApp that improved
+                    lead qualification speed by 70% compared to manual outreach. The core of the system is a LangGraph StateGraph
+                    with 7 specialized nodes covering intent detection, data extraction, lead scoring, and human escalation, capable
+                    of handling 50+ concurrent conversations without human intervention. I integrated the Groq API with
+                    llama-3.3-70b-versatile as the inference engine and wired LangSmith for real-time production observability,
+                    which cut debugging and incident resolution time by 45%. I deployed the full multi-service stack across Railway,
+                    Fly.io, and Vercel using Docker and supervisord for zero-downtime continuous availability, and I built the
+                    real-time lead management dashboard in Next.js 14 App Router with conversation history, lead status tracking,
+                    and manual override capabilities, reducing agent response time by 55%.
+                </p>
+                <p class="cv-card__stack"><strong>Stack:</strong> LangGraph, LangChain, Groq API, Node.js/Express, FastAPI, Next.js 14, PostgreSQL, Docker, Railway, Fly.io, Vercel</p>
+                <a href="#" class="cv-card__link">Live Demo →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Cobamovil</h3>
+                    <span class="cv-card__period">2026</span>
+                </div>
+                <p>
+                    I delivered a production-grade full-stack application with a fully decoupled Angular 20 SPA and a Spring Boot
+                    3.5 REST API, reducing average API response time by 40% through optimized JPA queries and database indexing.
+                    I implemented enterprise-grade authentication using JWT, BCrypt password encryption, and Spring Security
+                    role-based access control with USER and ADMIN roles, achieving zero critical vulnerabilities across all
+                    authentication flows. I automated database schema versioning with Flyway migrations to enable reproducible
+                    zero-downtime deployments across all environments, and documented 20+ REST endpoints via OpenAPI/Swagger UI,
+                    reducing frontend-backend integration time by 60%.
+                </p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Angular 20, Spring Boot 3.5, PostgreSQL, JWT, Spring Security, Flyway, OpenAPI/Swagger</p>
+                <a href="#" class="cv-card__link">Live Demo →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Defect Insights</h3>
+                    <span class="cv-card__period">2026</span>
+                </div>
+                <p>
+                    I built an AI-powered manufacturing defect analytics dashboard that cuts manual analysis time by 75% by
+                    automating descriptive statistics and Monte Carlo simulation execution directly on raw CSV datasets. I integrated
+                    Google Gemini via Firebase Genkit to generate contextual AI insights from manufacturing data, enabling
+                    non-technical stakeholders to make data-driven decisions without analyst dependency. The platform renders
+                    10,000+ data points in real time through interactive Recharts visualizations, reducing defect pattern
+                    comprehension time and improving time-to-decision by 65%.
+                </p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Next.js, Recharts, Firebase Genkit, Google Gemini, Firebase Firestore</p>
+                <a href="#" class="cv-card__link">Live Demo →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>MathScope</h3>
+                    <span class="cv-card__period">2026</span>
+                </div>
+                <p>
+                    I engineered a real-time interactive 2D and 3D mathematical function visualization platform that supports
+                    gradient analysis and symbolic computation across 50+ function types through a single unified interface.
+                    I used math.js for client-side symbolic evaluation and connected Google Genkit AI for AI-assisted function
+                    suggestions, reducing time-to-visualization from several minutes to under 3 seconds. The responsive dual-panel
+                    layout with tabbed navigation I designed increased average user session duration by 40%.
+                </p>
+                <p class="cv-card__stack"><strong>Stack:</strong> Next.js, math.js, Firebase Genkit, Google Gemini, Firebase Firestore</p>
+                <a href="#" class="cv-card__link">Live Demo →</a>
+            </div>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <h3>Portfolio V5</h3>
+                    <span class="cv-card__period">2026</span>
+                </div>
+                <p>
+                    I designed and deployed this full-stack personal portfolio with a protected admin dashboard, achieving sub-1.2s
+                    first contentful paint through Vite code-splitting and lazy-loaded routes. I implemented Supabase Realtime
+                    subscriptions for live comment updates, Row-Level Security policies for granular authorization, and Supabase
+                    Storage for media asset management. I engineered a complete admin CRUD dashboard covering projects, certificates,
+                    and a testimonial approval workflow with email notifications and role-based access control, reducing content
+                    update workflows to under 5 minutes.
+                </p>
+                <p class="cv-card__stack"><strong>Stack:</strong> React 18, Vite, Supabase (Auth, Realtime, Storage, RLS), TypeScript, Tailwind CSS</p>
+                <a href="#" class="cv-card__link">Live Demo →</a>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Education</h2>
+
+            <div class="cv-card">
+                <div class="cv-card__header">
+                    <div>
+                        <h3>Professional Engineering Degree, Software Engineering</h3>
+                        <span class="cv-card__company">Universidad Cooperativa de Colombia</span>
+                    </div>
+                    <span class="cv-card__period">In Progress</span>
+                </div>
+                <p>San Juan de Pasto, Colombia</p>
+                <p>
+                    Coursework includes Software Architecture, Web Engineering, Algorithms and Data Structures, Databases, and
+                    Object-Oriented Programming. Throughout my degree I have built AI-integrated full-stack systems in parallel
+                    with academic training, applying theoretical concepts directly to production environments rather than waiting
+                    to graduate to start building real things.
+                </p>
+            </div>
+
+            <div class="cv-section__profiles">
+                <div class="profile-links">
+                    <a href="https://linkedin.com/in/luis-esteban-castillo-pedroza" target="_blank" class="profile-link">
+                        <span class="profile-link__icon">🔗</span>
+                        <span>LinkedIn — luis-esteban-castillo-pedroza</span>
+                    </a>
+                    <a href="https://github.com/lxiscxstillo" target="_blank" class="profile-link">
+                        <span class="profile-link__icon">🐙</span>
+                        <span>GitHub — lxiscxstillo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Technical Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                        <span>HTML &amp; CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                        <span>React 18</span>
+                        <span>Next.js 14/15</span>
+                        <span>Angular 20</span>
+                        <span>Tailwind CSS</span>
+                        <span>shadcn/ui</span>
+                        <span>Recharts</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Backend</h4>
+                    <div class="skill-tags">
+                        <span>FastAPI</span>
+                        <span>Node.js / Express</span>
+                        <span>Spring Boot 3.5</span>
+                        <span>Django</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>AI / ML &amp; LLMs</h4>
+                    <div class="skill-tags">
+                        <span>LangGraph</span>
+                        <span>LangChain</span>
+                        <span>Groq API</span>
+                        <span>LangSmith</span>
+                        <span>Google Gemini</span>
+                        <span>Firebase Genkit</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Databases</h4>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span>
+                        <span>Supabase</span>
+                        <span>Firebase Firestore</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>ORM &amp; Data Layer</h4>
+                    <div class="skill-tags">
+                        <span>Prisma ORM</span>
+                        <span>JPA / Hibernate</span>
+                        <span>Flyway Migrations</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>DevOps &amp; Cloud</h4>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Docker Compose</span>
+                        <span>Railway</span>
+                        <span>Fly.io</span>
+                        <span>Vercel</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Security &amp; APIs</h4>
+                    <div class="skill-tags">
+                        <span>JWT</span>
+                        <span>Spring Security</span>
+                        <span>OpenAPI / Swagger</span>
+                        <span>Supabase RLS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Testing</h4>
+                    <div class="skill-tags">
+                        <span>Vitest</span>
+                        <span>Jest</span>
+                        <span>GitHub Actions CI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section class="cv-section">
+            <h2 class="cv-section__title">Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <div class="skill-tags">
+                        <span>Spanish — Native</span>
+                        <span>English — B1</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="cv-footer">
+            <p>© 2026 Luis Esteban Castillo Pedroza. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
