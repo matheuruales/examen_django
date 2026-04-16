@@ -264,3 +264,32 @@ body {
     padding: 0.25rem 0.65rem;
     border-radius: 999px;
 }
+
+/* FOOTER */
+.cv-footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    padding: 1rem 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+    .cv-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+
+    .cv-section {
+        padding: 1.25rem 1rem;
+    }
+
+    .cv-card__header {
+        flex-direction: column;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
